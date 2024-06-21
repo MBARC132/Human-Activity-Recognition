@@ -1,0 +1,97 @@
+/* Style for body*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #020629;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for h1 */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    padding: 170px auto;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    padding: 170px auto;
+}
+
+/* Style for form */
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 100px;
+    background-color: #ededed;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(214, 24, 24, 0.1);
+}
+
+/* Style for label */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 7px;
+    color: #060000;
+    margin-left: -39px;
+}
+
+img{
+    margin-left: 318px;
+    margin-top: -113px;
+}
+
+/* Style for input */
+input[type="file"] {
+    width: 115%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: -50px;
+}
+
+/* Style for button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: -38px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for button */
+button[type="submit"]:hover {
+    background-color: #1a0909;
+} 
+
+/* Spinner style */
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #e74c3c;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+/* Spinner animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}

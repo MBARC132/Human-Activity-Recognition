@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/Style.css">
+    <title>Video Upload and Prediction</title>
+    <style>
+        #loading {
+            display: none;
+            /* padding: 5px; */
+            width: 42px;
+            height: 42px;
+            border: 5px solid #012c51;
+            border-radius: 50%;
+            border-top: 5px solid #fdfeff;
+            animation: spin 1s linear infinite;
+            /* margin-top: 100px; */
+            margin-left: 530px;
+            margin-top: -160px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Human Activity Recognition</h1>
+    <h2>Upload a Video for Prediction</h2>
+    <form id="uploadForm" action="{{ url_for('process_video') }}" method="post" enctype="multipart/form-data">
+        <img src="{{ url_for('static', filename='images/cctv_image.png') }}" alt="Description of the Image" width="200" height="150">
+        <label for="video_file">Choose a video file:</label>
+        <input type="file" id="video_file" name="video_file" accept="video/*" required>
+        <button type="submit">Upload and Process</button>
+    </form>
+    <div id="loading"></div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function() {
+            document.querySelector('button[type="submit"]').style.display = 'none';
+            document.getElementById('loading').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

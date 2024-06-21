@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}"> -->
+    <link rel="stylesheet" type="text/css" href="/static/style1.css">
+    <title>Action Recognition Result</title>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">HOME</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Action Recognition Result</h1>
+    <!-- <video width="440" height="300" controls> -->
+        <img src="{{ image_path }}" alt="Predicted Frame with Class Name">
+        <!-- <source src="{{ image_path }}" type="video/mp4"> -->
+        <a id="text" href="{{ url_for('index') }}">Upload another video</a>
+    </video>
+</body>
+</html>
+

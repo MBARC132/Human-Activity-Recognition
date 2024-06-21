@@ -1,0 +1,74 @@
+/* Style for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #020222;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for h1 */
+h1 {
+    text-align: center;
+    margin: 60px auto;
+    color: #f8f2f2;
+}
+
+
+nav{
+    font-family: 'ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    margin-top: 0%;
+    list-style-type: none;
+    color: rgb(240, 234, 234);
+    height: 99px;
+    font-style: arial;
+    background-color: black;
+}
+
+li{
+    display: list-item;
+    text-align: center;
+    margin-left: 150px;
+    unicode-bidi: isolate;
+}
+
+nav li{
+    padding: 40px 12px;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial,;
+    text-size-adjust: 100px;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+
+ul li a:hover{
+    color: rgb(230, 68, 9);
+    
+}
+
+/* Style for video */
+img {
+    display: block;
+    margin: 50px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+a:not(nav a) {
+    text-align: center;
+    padding: auto;
+    margin-left: 657px;
+    /* margin: 60px auto; */
+    /* color: #f8f2f2; */
+}
